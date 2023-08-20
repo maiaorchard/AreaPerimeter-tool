@@ -1,2 +1,2 @@
 
-import shapesfunction.py
+import shapesfunction
