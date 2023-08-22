@@ -10,31 +10,41 @@ def shape_picker(question):
 
     elif shape_selected == shapes[1]:
       valid_shape = True
-      triangle_type = input("Which type of triangle? ").strip().lower()
-      if triangle_type == triangles[0]:
-        angle = 90
-      #ask for measurements 
-      elif triangle_type == triangles[1]:
-        angle = input(int("Enter the angle of the triangle"))
-        #ask for other measurements 
-
-      elif triangle_type == triangles[2]:
-        angle = input(int("Enter the angle of the triangle"))
-        #ask for other measurements 
-      elif triangle_type == triangles[3]:
-        angle = input(int("Enter the angle of the triangle"))
-        #ask for other measurements
-
-      elif triangle_type == triangles[4]:
-        angle = input(int("Enter the angle of the triangle"))
-        #ask for other measurements 
-
-      elif triangle_type == triangles[5]:
-        angle = input(int("Enter the angle of the triangle"))
-        #ask for other measurements 
+      valid_triangle = False
+      while valid_triangle == False:
+        triangle_type = input("Which type of triangle? ").strip().lower()
       
-      else:
-        print("Please enter a type of triangle")
+        if triangle_type == triangles[0]:
+          valid_triangle = True
+          angle = 90
+          #ask for measurements 
+        elif triangle_type == triangles[1]:
+          valid_triangle = True
+          angle = int(input("Enter the angle of the triangle: "))
+          #ask for other measurements 
+  
+        elif triangle_type == triangles[2]:
+          valid_triangle = True
+          angle = int(input("Enter the angle of the triangle: "))
+          #ask for other measurements 
+        elif triangle_type == triangles[3]:
+          valid_triangle = True
+          angle = int(input("Enter the angle of the triangle: "))
+          #ask for other measurements
+
+        elif triangle_type == triangles[4]:
+          valid_triangle = True
+          angle = int(input("Enter the angle of the triangle: "))
+          #ask for other measurements 
+
+        elif triangle_type == triangles[5]:
+          valid_triangle = True
+          angle = int(input("Enter the angle of the triangle: "))
+          #ask for other measurements 
+      
+        else:
+          valid_triangle = False
+          print("Please enter a type of triangle.")
     
     elif shape_selected == shapes[2]:
       valid_shape = True
