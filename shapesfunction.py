@@ -172,19 +172,19 @@ def shape_picker(question):
       valid_length = False
       while valid_length == False:
         try:
-           length = float(input("What is the length of the rectangle? (Please enter only a number) "))
-           valid_length = True
+          length = float(input("What is the length of the rectangle? (Please enter only a number) "))
+          valid_length = True
         except:
           print("Please enter a number")
-          #ask for width
-        valid_width = False
-        while valid_width == False:
-          try:
-            width = float(input("What is the width of the rectangle? (Please enter only a number) "))
-            valid_width = True
-          except:
-            print("Please enter a number")
-            #ask for units
+      #ask for width
+      valid_width = False
+      while valid_width == False:
+        try:
+          width = float(input("What is the width of the rectangle? (Please enter only a number) "))
+          valid_width = True
+        except:
+          print("Please enter a number")
+          #ask for units
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     elif shape_selected == shapes[3]:
       valid_shape = True
