@@ -76,7 +76,15 @@ def shape_picker(question):
 
     elif shape_selected == shapes[3]:
       valid_shape = True
-      #ask for measurements 
+      #ask for radius
+      valid_radius = False
+      while valid_radius == False:
+        try:
+          radius = float(input("What is the radius of the circle? (Please enter only a number) "))
+          valid_radius = True
+        except:
+          print("Please enter a number")
+      #ask for units 
 
     elif shape_selected == shapes[4]:
       valid_shape = True
