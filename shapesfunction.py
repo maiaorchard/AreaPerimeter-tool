@@ -88,10 +88,35 @@ def shape_picker(question):
 
     elif shape_selected == shapes[4]:
       valid_shape = True
-      #ask for measurements 
+      #ask for base length
+      valid_base = False
+      while valid_base == False:
+        try:
+          base = float(input("What is the length of the base of the parallelogram? (Please enter only a number) "))
+          valid_base = True
+        except:
+          print("Please enter a number")
+
+      #ask for height
+      valid_height = False
+      while valid_height == False:
+        try:
+          height = float(input("What is the height of the parallelogram? (Please enter only a number) "))
+          valid_height = True
+        except:
+          print("Please enter a number")
+
+      #ask for the length of the side
+      valid_length = False
+      while valid_length == False:
+        try:
+          side = float(input("What is the length of the side of the parallelogram? (Please enter only a number) "))
+          valid_number = True
+        except:
+          print("Please enter a number")
     
     else:
-      print("That shape is not in the list. Please enter a different shape")
+      print("That shape is not in the list. Please enter a different shape or  check your spelling of the shape")
 
 #Lists go under functions
 shapes = ["square", "triangle", "rectangle", "circle", "parallelogram"]
