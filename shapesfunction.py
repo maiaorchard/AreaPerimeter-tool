@@ -8,7 +8,7 @@ def shape_picker(question):
     if shape_selected == shapes[0]:
       valid_shape = True
       
-      #ask for measurements
+      #ask for the length
       valid_number = False
       while valid_number == False:
         try:
@@ -18,7 +18,7 @@ def shape_picker(question):
           print("Please enter a number")
       
       #ask for units
-      #units = input("Please enter the units: ")
+      units = input("mm, cm, or M? ").lower().strip()
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     elif shape_selected == shapes[1]:
       valid_shape = True
@@ -45,6 +45,8 @@ def shape_picker(question):
               valid_width = True
             except:
               print("Please enter a number")
+          #ask for units
+          units = input("mm, cm, or M? ").lower().strip()
       #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         elif triangle_type == triangles[1]:
           valid_triangle = True
@@ -56,6 +58,8 @@ def shape_picker(question):
               valid_length = True
             except:
               print("Please enter a number")
+          #ask for units
+          units = input("mm, cm, or M? ").lower().strip()
       #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         elif triangle_type == triangles[2]:
           valid_triangle = True
@@ -85,6 +89,8 @@ def shape_picker(question):
               valid_length = True
             except:
               print("Please enter a number")
+          #ask for units
+          units = input("mm, cm, or M? ").lower().strip()
       #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         elif triangle_type == triangles[3]:
           valid_triangle = True
@@ -123,7 +129,9 @@ def shape_picker(question):
               valid_length2 = True
             except:
               print("Please enter a number")
-    
+          #ask for units
+          units = input("mm, cm, or M? ").lower().strip()
+      #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         elif triangle_type == triangles[4] or triangle_type == triangles[5]:
           valid_triangle = True
           #ask for base measurement
@@ -161,6 +169,8 @@ def shape_picker(question):
               valid_length2 = True
             except:
               print("Please enter a number")
+          #ask for units
+          units = input("mm, cm, or M? ").lower().strip()
       #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         else:
           valid_triangle = False
@@ -184,7 +194,8 @@ def shape_picker(question):
           valid_width = True
         except:
           print("Please enter a number")
-          #ask for units
+      #ask for units
+      units = input("mm, cm, or M? ").lower().strip()
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     elif shape_selected == shapes[3]:
       valid_shape = True
@@ -197,6 +208,7 @@ def shape_picker(question):
         except:
           print("Please enter a number")
       #ask for units 
+      units = input("mm, cm, or M? ").lower().strip()
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     elif shape_selected == shapes[4]:
       valid_shape = True
@@ -226,6 +238,8 @@ def shape_picker(question):
           valid_length = True
         except:
           print("Please enter a number")
+      #ask for units
+      units = input("mm, cm, or M? ").lower().strip()
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     else:
       print("That shape is not in the list. Please enter a different shape or  check your spelling of the shape")
