@@ -6,7 +6,18 @@ def shape_picker(question):
     shape_selected = input(question).strip().lower()
     if shape_selected == shapes[0]:
       valid_shape = True
-      length = input("What is the length of the square?")
+      
+      #ask for measurements
+      valid_number = False
+      while valid_number == False:
+        try:
+          length = float(input("What is the length of the square? (Please enter only a number) "))
+          valid_number = True
+        except:
+          print("Please enter a number")
+      
+      #ask for units
+      #units = input("Please enter the units: ")
 
     elif shape_selected == shapes[1]:
       valid_shape = True
@@ -16,28 +27,29 @@ def shape_picker(question):
       
         if triangle_type == triangles[0]:
           valid_triangle = True
-          #ask for measurements 
-        
+          #ask for measurements depending on the formulas
+          
+          
         elif triangle_type == triangles[1]:
           valid_triangle = True
-          #ask for other measurements 
-  
+          #ask for other measurements depending on the formulas
+          
         elif triangle_type == triangles[2]:
           valid_triangle = True
-          #ask for other measurements 
-        
+          #ask for other measurements depending on the formulas
+          
         elif triangle_type == triangles[3]:
           valid_triangle = True
-          #ask for other measurements
-
+          #ask for other measurements depending on the formulas
+          
         elif triangle_type == triangles[4]:
           valid_triangle = True
-          #ask for other measurements 
-
+          #ask for other measurements depending on the formulas
+          
         elif triangle_type == triangles[5]:
           valid_triangle = True
-          #ask for other measurements 
-      
+          #ask for other measurements depending on the formulas
+          
         else:
           valid_triangle = False
           print("Please enter a type of triangle.")
@@ -58,7 +70,7 @@ def shape_picker(question):
 
 #Lists go under functions
 shapes = ["square", "triangle", "rectangle", "circle", "parallelogram"]
-triangles = ["right angle", "equilateral", "isoceles", "acute", "scalene", "obtuse"]
+triangles = ["right angle", "equilateral", "isosceles", "acute", "scalene", "obtuse"]
 
 #Use the function
 shape_picker("Choose a shape: ")
