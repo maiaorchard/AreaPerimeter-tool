@@ -13,7 +13,12 @@ def shape_picker(question):
       while valid_number == False:
         try:
           length = float(input("What is the length of the square? (Please enter only a number) "))
-          valid_number = True
+          if length > 999:
+            print("Number is too high")
+          elif length < 1:
+            print("Number is too low")
+          else:
+            valid_number = True
         except:
           print("Please enter a number")
       
@@ -33,7 +38,13 @@ def shape_picker(question):
           while valid_length == False:
             try:
               length = float(input("What is the length of the triangle? (Please enter only a number) "))
-              valid_length = True
+              if length > 999:
+                print("Number is too high")
+              elif length < 1:
+                print("Number is too low")
+              else:
+                valid_length = True
+              
             except:
               print("Please enter a number")
 
@@ -42,7 +53,12 @@ def shape_picker(question):
           while valid_width == False:
             try:
               width = float(input("What is the width of the triangle? (Please enter only a number) "))
-              valid_width = True
+              if width > 999:
+                print("Number is too high")
+              elif width < 1:
+                print("Number is too low")
+              else:
+                valid_width = True
             except:
               print("Please enter a number")
           #ask for units
@@ -55,7 +71,12 @@ def shape_picker(question):
           while valid_length == False:
             try:
               length = float(input("What is the length of the triangle? (Please enter only a number) "))
-              valid_length = True
+              if length > 999:
+                print("Number is too high")
+              elif length < 1:
+                print("Number is too low")
+              else:
+                valid_length = True
             except:
               print("Please enter a number")
           #ask for units
@@ -68,7 +89,12 @@ def shape_picker(question):
           while valid_base == False:
             try:
               base = float(input("What is the length of the base of the triangle? (Please enter only a number) "))
-              valid_base = True
+              if base > 999:
+                print("Number is too high")
+              elif base < 1:
+                print("Number is too low")
+              else:
+                valid_base = True
             except:
               print("Please enter a number")
 
@@ -77,7 +103,12 @@ def shape_picker(question):
           while valid_height == False:
             try:
               height = float(input("What is the height of the triangle? (Please enter only a number) "))
-              valid_height = True
+              if height > 999:
+                print("Number is too high")
+              elif height < 1:
+                print("Number is too low")
+              else:
+                valid_height = True
             except:
               print("Please enter a number")
 
@@ -86,7 +117,12 @@ def shape_picker(question):
           while valid_length == False:
             try:
               side = float(input("What is the length of the side of the triangle? (Please enter only a number) "))
-              valid_length = True
+              if side > 999:
+                print("Number is too high")
+              elif side < 1:
+                print("Number is too low")
+              else:
+                valid_length = True
             except:
               print("Please enter a number")
           #ask for units
@@ -99,7 +135,12 @@ def shape_picker(question):
           while valid_base == False:
             try:
               base = float(input("What is the length of the base of the triangle? (Please enter only a number) "))
-              valid_base = True
+              if base > 999:
+                print("Number is too high")
+              elif base < 1:
+                print("Number is too low")
+              else:
+                valid_base = True
             except:
               print("Please enter a number")
 
@@ -108,7 +149,12 @@ def shape_picker(question):
           while valid_height == False:
             try:
               height = float(input("What is the height of the triangle? (Please enter only a number) "))
-              valid_height = True
+              if height > 999:
+                print("Number is too high")
+              elif height < 1:
+                print("Number is too low")
+              else:
+                valid_height = True
             except:
               print("Please enter a number")
 
@@ -117,7 +163,12 @@ def shape_picker(question):
           while valid_length == False:
             try:
               side = float(input("What is the length of one side of the triangle? (Please enter only a number) "))
-              valid_length = True
+              if side > 999:
+                print("Number is too high")
+              elif side < 1:
+                print("Number is too low")
+              else:
+                valid_length = True
             except:
               print("Please enter a number")
 
@@ -125,8 +176,13 @@ def shape_picker(question):
           valid_length2 = False
           while valid_length2 == False:
             try:
-              side = float(input("What is the length of the other side of the triangle? (Please enter only a number) "))
-              valid_length2 = True
+              side2 = float(input("What is the length of the other side of the triangle? (Please enter only a number) "))
+              if side2 > 999:
+                print("Number is too high")
+              elif side2 < 1:
+                print("Number is too low")
+              else:
+                valid_length2 = True
             except:
               print("Please enter a number")
           #ask for units
@@ -139,7 +195,12 @@ def shape_picker(question):
           while valid_base == False:
             try:
               base = float(input("What is the length of the base of the triangle? (Please enter only a number) "))
-              valid_base = True
+              if base > 999:
+                print("Number is too high")
+              elif base < 1:
+                print("Number is too low")
+              else:
+                valid_base = True
             except:
               print("Please enter a number")
 
@@ -148,7 +209,12 @@ def shape_picker(question):
           while valid_height == False:
             try:
               height = float(input("What is the height of the triangle? (Please enter only a number) "))
-              valid_height = True
+              if height > 999:
+                print("Number is too high")
+              elif height < 1:
+                print("Number is too low")
+              else:
+                valid_height = True
             except:
               print("Please enter a number")
 
@@ -157,7 +223,12 @@ def shape_picker(question):
           while valid_length == False:
             try:
               side = float(input("What is the length of one side of the triangle? (Please enter only a number) "))
-              valid_length = True
+              if side > 999:
+                print("Number is too high")
+              elif side < 1:
+                print("Number is too low")
+              else:
+                valid_length = True
             except:
               print("Please enter a number")
 
@@ -165,8 +236,13 @@ def shape_picker(question):
           valid_length2 = False
           while valid_length2 == False:
             try:
-              side = float(input("What is the length of the other side of the triangle? (Please enter only a number) "))
-              valid_length2 = True
+              side2 = float(input("What is the length of the other side of the triangle? (Please enter only a number) "))
+              if side2 > 999:
+                print("Number is too high")
+              elif side2 < 1:
+                print("Number is too low")
+              else:
+                valid_length2 = True
             except:
               print("Please enter a number")
           #ask for units
