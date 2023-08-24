@@ -278,7 +278,7 @@ def shape_picker(question):
       #ask for radius
       valid_radius = False
       while valid_radius == False:
-        try:
+        try: 
           radius = float(input("What is the radius of the circle? (Please enter only a number) "))
           valid_radius = True
         except:
