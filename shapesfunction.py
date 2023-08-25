@@ -23,7 +23,23 @@ def shape_picker(question):
           print("Please enter a number")
       
       #ask for units
-      units = input("mm, cm, or M? ").lower().strip()
+      valid_unit = False
+      while valid_unit == False:
+        units = input("mm, cm, or M? ").lower().strip()
+        if units != "mm" and units != "cm" and units != "m":
+          print("Please enter mm, cm or M")
+        else:
+          valid_unit = True
+          #ask user if the units should be converted
+          convert = input("Would you like to convert into a different unit? ").lower().strip()
+          if convert == "yes" or convert == "y":
+            valid_unit2 = False
+            while valid_unit2 == False:
+              units2 = input("mm, cm, or M? ").lower().strip()
+              if units2 != "mm" and units2 != "cm" and units2 != "m":
+                print("Please enter mm, cm or M")
+              else:
+                valid_unit2 = True
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     elif shape_selected == shapes[1]:
       valid_shape = True
@@ -62,7 +78,23 @@ def shape_picker(question):
             except:
               print("Please enter a number")
           #ask for units
-          units = input("mm, cm, or M? ").lower().strip()
+          valid_unit = False
+          while valid_unit == False:
+            units = input("mm, cm, or M? ").lower().strip()
+            if units != "mm" and units != "cm" and units != "m":
+              print("Please enter mm, cm or M")
+            else:
+              valid_unit = True
+              #ask user if the units should be converted
+              convert = input("Would you like to convert into a different unit? ").lower().strip()
+              if convert == "yes" or convert == "y":
+                valid_unit2 = False
+                while valid_unit2 == False:
+                  units2 = input("mm, cm, or M? ").lower().strip()
+                  if units2 != "mm" and units2 != "cm" and units2 != "m":
+                    print("Please enter mm, cm or M")
+                  else:
+                    valid_unit2 = True
       #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         elif triangle_type == triangles[1]:
           valid_triangle = True
@@ -80,7 +112,23 @@ def shape_picker(question):
             except:
               print("Please enter a number")
           #ask for units
-          units = input("mm, cm, or M? ").lower().strip()
+          valid_unit = False
+          while valid_unit == False:
+            units = input("mm, cm, or M? ").lower().strip()
+            if units != "mm" and units != "cm" and units != "m":
+             print("Please enter mm, cm or M")
+            else:
+              valid_unit = True
+              #ask user if the units should be converted
+              convert = input("Would you like to convert into a different unit? ").lower().strip()
+              if convert == "yes" or convert == "y":
+                valid_unit2 = False
+                while valid_unit2 == False:
+                  units2 = input("mm, cm, or M? ").lower().strip()
+                  if units2 != "mm" and units2 != "cm" and units2 != "m":
+                    print("Please enter mm, cm or M")
+                  else:
+                    valid_unit2 = True
       #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         elif triangle_type == triangles[2]:
           valid_triangle = True
@@ -126,7 +174,23 @@ def shape_picker(question):
             except:
               print("Please enter a number")
           #ask for units
-          units = input("mm, cm, or M? ").lower().strip()
+          valid_unit = False
+          while valid_unit == False:
+            units = input("mm, cm, or M? ").lower().strip()
+            if units != "mm" and units != "cm" and units != "m":
+              print("Please enter mm, cm or M")
+            else:
+              valid_unit = True
+              #ask user if the units should be converted
+              convert = input("Would you like to convert into a different unit? ").lower().strip()
+              if convert == "yes" or convert == "y":
+                valid_unit2 = False
+                while valid_unit2 == False:
+                  units2 = input("mm, cm, or M? ").lower().strip()
+                  if units2 != "mm" and units2 != "cm" and units2 != "m":
+                    print("Please enter mm, cm or M")
+                  else:
+                    valid_unit2 = True
       #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         elif triangle_type == triangles[3]:
           valid_triangle = True
@@ -186,7 +250,23 @@ def shape_picker(question):
             except:
               print("Please enter a number")
           #ask for units
-          units = input("mm, cm, or M? ").lower().strip()
+          valid_unit = False
+          while valid_unit == False:
+            units = input("mm, cm, or M? ").lower().strip()
+            if units != "mm" and units != "cm" and units != "m":
+              print("Please enter mm, cm or M")
+            else:
+              valid_unit = True
+              #ask user if the units should be converted
+              convert = input("Would you like to convert into a different unit? ").lower().strip()
+              if convert == "yes" or convert == "y":
+                valid_unit2 = False
+                while valid_unit2 == False:
+                  units2 = input("mm, cm, or M? ").lower().strip()
+                  if units2 != "mm" and units2 != "cm" and units2 != "m":
+                    print("Please enter mm, cm or M")
+                  else:
+                    valid_unit2 = True
       #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         elif triangle_type == triangles[4] or triangle_type == triangles[5]:
           valid_triangle = True
@@ -246,7 +326,13 @@ def shape_picker(question):
             except:
               print("Please enter a number")
           #ask for units
-          units = input("mm, cm, or M? ").lower().strip()
+          valid_unit = False
+          while valid_unit == False:
+            units = input("mm, cm, or M? ").lower().strip()
+            if units != "mm" and units != "cm" and units != "m":
+              print("Please enter mm, cm or M")
+            else:
+              valid_unit = True
       #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         else:
           valid_triangle = False
@@ -283,7 +369,13 @@ def shape_picker(question):
         except:
           print("Please enter a number")
       #ask for units
-      units = input("mm, cm, or M? ").lower().strip()
+      valid_unit = False
+      while valid_unit == False:
+        units = input("mm, cm, or M? ").lower().strip()
+        if units != "mm" and units != "cm" and units != "m":
+          print("Please enter mm, cm or M")
+        else:
+          valid_unit = True
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     elif shape_selected == shapes[3]:
       valid_shape = True
@@ -301,7 +393,13 @@ def shape_picker(question):
         except:
           print("Please enter a number")
       #ask for units 
-      units = input("mm, cm, or M? ").lower().strip()
+      valid_unit = False
+      while valid_unit == False:
+        units = input("mm, cm, or M? ").lower().strip()
+        if units != "mm" and units != "cm" and units != "m":
+          print("Please enter mm, cm or M")
+        else:
+          valid_unit = True
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     elif shape_selected == shapes[4]:
       valid_shape = True
@@ -348,7 +446,13 @@ def shape_picker(question):
         except:
           print("Please enter a number")
       #ask for units
-      units = input("mm, cm, or M? ").lower().strip()
+      valid_unit = False
+      while valid_unit == False:
+        units = input("mm, cm, or M? ").lower().strip()
+        if units != "mm" and units != "cm" and units != "m":
+          print("Please enter mm, cm or M")
+        else:
+          valid_unit = True
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     else:
       print("That shape is not in the list. Please enter a different shape or  check your spelling of the shape")
