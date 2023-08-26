@@ -1,32 +1,74 @@
+ #convert base
+if units == "mm" and unit2 == "cm":
+  base = base / 10
+  print(base)
 
-valid_number = False
-while valid_number == False:
-  try:
-    length = float(input("What is the length of the square? (Please enter only a number) "))
-    if length > 999.9:
-      print("Number is too high")
-    elif length < 0.1:
-      print("Number is too low")
-    else:
-      valid_number = True
-  except:
-    print("Please enter a number")
+elif units == "cm" and unit2 == "m":
+  base = base / 100
+  print(base)
+  
+elif units == "mm" and unit2 == "m":
+  base = base / 1000
+  print(base)
 
-#ask for units
-valid_unit = False
-while valid_unit == False:
-  units = input("mm, cm, or M? ").lower().strip()
-  if units != "mm" and units != "cm" and units != "m":
-    print("Please enter mm, cm or M")
-  else:
-    valid_unit = True
-    #ask what units it should be converted to
-    valid_unit2 = False
-    while valid_unit2 == False:
-      unit2 = input("What units would you like to convert to? mm, cm, or M? If you would not like units converted, please enter the same unit ").lower().strip()
-      if unit2 != "mm" and unit2 != "cm" and unit2 != "m":
-        print("Please enter mm, cm or M")
-      else:
-        valid_unit2 = True
-        
-        
+elif units == "m" and unit2 == "mm":
+  base = base * 1000
+  print(base)
+  
+elif units == "m" and unit2 == "cm":
+  base = base * 100
+  print(base)
+  
+elif units == "cm" and unit2 == "mm":
+  base = base * 10
+  print(base)
+
+#convert height
+if units == "mm" and unit2 == "cm":
+  height = height / 10
+  print(height)
+
+elif units == "cm" and unit2 == "m":
+  height = height / 100
+  print(height)
+  
+elif units == "mm" and unit2 == "m":
+  height = height / 1000
+  print(height)
+
+elif units == "m" and unit2 == "mm":
+  height = height * 1000
+  print(height)
+  
+elif units == "m" and unit2 == "cm":
+  height = height * 100
+  print(height)
+  
+elif units == "cm" and unit2 == "mm":
+  height = height * 10
+  print(height)
+
+#convert side
+if units == "mm" and unit2 == "cm":
+  side = side / 10
+  print(side)
+
+elif units == "cm" and unit2 == "m":
+  side = side / 100
+  print(side)
+  
+elif units == "mm" and unit2 == "m":
+  side = side / 1000
+  print(side)
+
+elif units == "m" and unit2 == "mm":
+  side = side * 1000
+  print(side)
+  
+elif units == "m" and unit2 == "cm":
+  side = side * 100
+  print(side)
+  
+elif units == "cm" and unit2 == "mm":
+  side = side * 10
+  print(side)

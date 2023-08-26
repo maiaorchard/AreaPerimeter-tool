@@ -38,6 +38,31 @@ def shape_picker(question):
               print("Please enter mm, cm or M")
             else:
               valid_unit2 = True
+
+      if units == "mm" and unit2 == "cm":
+        length = length / 10
+        print(length)
+
+      elif units == "cm" and unit2 == "m":
+        length = length / 100
+        print(length)
+        
+      elif units == "mm" and unit2 == "m":
+        length = length / 1000
+        print(length)
+
+      elif units == "m" and unit2 == "mm":
+        length = length * 1000
+        print(length)
+        
+      elif units == "m" and unit2 == "cm":
+        length = length * 100
+        print(length)
+        
+      elif units == "cm" and unit2 == "mm":
+        length = length * 10
+        print(length)
+      
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     elif shape_selected == shapes[1]:
       valid_shape = True
@@ -382,6 +407,57 @@ def shape_picker(question):
               print("Please enter mm, cm or M")
             else:
               valid_unit2 = True
+              
+      #convert length
+      if units == "mm" and unit2 == "cm":
+        length = length / 10
+        print(length)
+
+      elif units == "cm" and unit2 == "m":
+        length = length / 100
+        print(length)
+        
+      elif units == "mm" and unit2 == "m":
+        length = length / 1000
+        print(length)
+
+      elif units == "m" and unit2 == "mm":
+        length = length * 1000
+        print(length)
+        
+      elif units == "m" and unit2 == "cm":
+        length = length * 100
+        print(length)
+        
+      elif units == "cm" and unit2 == "mm":
+        length = length * 10
+        print(length)
+        
+      #convert width
+      if units == "mm" and unit2 == "cm":
+        width = width / 10
+        print(width)
+
+      elif units == "cm" and unit2 == "m":
+        width = width / 100
+        print(width)
+        
+      elif units == "mm" and unit2 == "m":
+        width = width / 1000
+        print(width)
+
+      elif units == "m" and unit2 == "mm":
+        width = width * 1000
+        print(width)
+        
+      elif units == "m" and unit2 == "cm":
+        width = width * 100
+        print(width)
+        
+      elif units == "cm" and unit2 == "mm":
+        width = width * 10
+        print(width)
+        
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     elif shape_selected == shapes[3]:
       valid_shape = True
@@ -390,7 +466,7 @@ def shape_picker(question):
       while valid_radius == False:
         try: 
           radius = float(input("What is the radius of the circle? (Please enter only a number) "))
-          if width > 999.9:
+          if radius > 999.9:
             print("Number is too high")
           elif radius < 0.1:
             print("Number is too low")
@@ -414,6 +490,31 @@ def shape_picker(question):
               print("Please enter mm, cm or M")
             else:
               valid_unit2 = True
+      #convert radius
+      if units == "mm" and unit2 == "cm":
+        radius = radius / 10
+        print(radius)
+
+      elif units == "cm" and unit2 == "m":
+        radius = radius / 100
+        print(radius)
+        
+      elif units == "mm" and unit2 == "m":
+        radius = radius / 1000
+        print(radius)
+
+      elif units == "m" and unit2 == "mm":
+        radius = radius * 1000
+        print(radius)
+        
+      elif units == "m" and unit2 == "cm":
+        radius = radius * 100
+        print(radius)
+        
+      elif units == "cm" and unit2 == "mm":
+        radius = radius * 10
+        print(radius)
+        
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     elif shape_selected == shapes[4]:
       valid_shape = True
@@ -475,6 +576,81 @@ def shape_picker(question):
               print("Please enter mm, cm or M")
             else:
               valid_unit2 = True
+      #convert base
+      if units == "mm" and unit2 == "cm":
+        base = base / 10
+        print(base)
+
+      elif units == "cm" and unit2 == "m":
+        base = base / 100
+        print(base)
+        
+      elif units == "mm" and unit2 == "m":
+        base = base / 1000
+        print(base)
+
+      elif units == "m" and unit2 == "mm":
+        base = base * 1000
+        print(base)
+        
+      elif units == "m" and unit2 == "cm":
+        base = base * 100
+        print(base)
+        
+      elif units == "cm" and unit2 == "mm":
+        base = base * 10
+        print(base)
+
+      #convert height
+      if units == "mm" and unit2 == "cm":
+        height = height / 10
+        print(height)
+
+      elif units == "cm" and unit2 == "m":
+        height = height / 100
+        print(height)
+        
+      elif units == "mm" and unit2 == "m":
+        height = height / 1000
+        print(height)
+
+      elif units == "m" and unit2 == "mm":
+        height = height * 1000
+        print(height)
+        
+      elif units == "m" and unit2 == "cm":
+        height = height * 100
+        print(height)
+        
+      elif units == "cm" and unit2 == "mm":
+        height = height * 10
+        print(height)
+
+      #convert side
+      if units == "mm" and unit2 == "cm":
+        side = side / 10
+        print(side)
+
+      elif units == "cm" and unit2 == "m":
+        side = side / 100
+        print(side)
+        
+      elif units == "mm" and unit2 == "m":
+        side = side / 1000
+        print(side)
+
+      elif units == "m" and unit2 == "mm":
+        side = side * 1000
+        print(side)
+        
+      elif units == "m" and unit2 == "cm":
+        side = side * 100
+        print(side)
+        
+      elif units == "cm" and unit2 == "mm":
+        side = side * 10
+        print(side)
+        
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     else:
       print("That shape is not in the list. Please enter a different shape or  check your spelling of the shape")
