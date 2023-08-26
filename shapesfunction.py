@@ -3,7 +3,7 @@
 def shape_picker(question):
   valid_shape = False
   while valid_shape == False:
-    shape_selected = input(question).strip().lower()
+    shape_selected = input(question).strip().lower() 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     if shape_selected == shapes[0]:
       valid_shape = True
@@ -38,7 +38,7 @@ def shape_picker(question):
               print("Please enter mm, cm or M")
             else:
               valid_unit2 = True
-
+      #convert length
       if units == "mm" and unit2 == "cm":
         length = length / 10
         print(length)
@@ -116,6 +116,57 @@ def shape_picker(question):
                   print("Please enter mm, cm or M")
                 else:
                   valid_unit2 = True
+
+          #convert length
+          if units == "mm" and unit2 == "cm":
+            length = length / 10
+            print(length)
+    
+          elif units == "cm" and unit2 == "m":
+            length = length / 100
+            print(length)
+            
+          elif units == "mm" and unit2 == "m":
+            length = length / 1000
+            print(length)
+    
+          elif units == "m" and unit2 == "mm":
+            length = length * 1000
+            print(length)
+            
+          elif units == "m" and unit2 == "cm":
+            length = length * 100
+            print(length)
+            
+          elif units == "cm" and unit2 == "mm":
+            length = length * 10
+            print(length)
+            
+          #convert width
+          if units == "mm" and unit2 == "cm":
+            width = width / 10
+            print(width)
+    
+          elif units == "cm" and unit2 == "m":
+            width = width / 100
+            print(width)
+            
+          elif units == "mm" and unit2 == "m":
+            width = width / 1000
+            print(width)
+    
+          elif units == "m" and unit2 == "mm":
+            width = width * 1000
+            print(width)
+            
+          elif units == "m" and unit2 == "cm":
+            width = width * 100
+            print(width)
+            
+          elif units == "cm" and unit2 == "mm":
+            width = width * 10
+            print(width)
+        
       #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         elif triangle_type == triangles[1]:
           valid_triangle = True
@@ -148,6 +199,32 @@ def shape_picker(question):
                   print("Please enter mm, cm or M")
                 else:
                   valid_unit2 = True
+
+          #convert length
+          if units == "mm" and unit2 == "cm":
+            length = length / 10
+            print(length)
+    
+          elif units == "cm" and unit2 == "m":
+            length = length / 100
+            print(length)
+            
+          elif units == "mm" and unit2 == "m":
+            length = length / 1000
+            print(length)
+    
+          elif units == "m" and unit2 == "mm":
+            length = length * 1000
+            print(length)
+            
+          elif units == "m" and unit2 == "cm":
+            length = length * 100
+            print(length)
+            
+          elif units == "cm" and unit2 == "mm":
+            length = length * 10
+            print(length)
+          
       #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         elif triangle_type == triangles[2]:
           valid_triangle = True
@@ -208,6 +285,81 @@ def shape_picker(question):
                   print("Please enter mm, cm or M")
                 else:
                   valid_unit2 = True
+
+          #convert base
+          if units == "mm" and unit2 == "cm":
+            base = base / 10
+            print(base)
+    
+          elif units == "cm" and unit2 == "m":
+            base = base / 100
+            print(base)
+            
+          elif units == "mm" and unit2 == "m":
+            base = base / 1000
+            print(base)
+    
+          elif units == "m" and unit2 == "mm":
+            base = base * 1000
+            print(base)
+            
+          elif units == "m" and unit2 == "cm":
+            base = base * 100
+            print(base)
+            
+          elif units == "cm" and unit2 == "mm":
+            base = base * 10
+            print(base)
+    
+          #convert height
+          if units == "mm" and unit2 == "cm":
+            height = height / 10
+            print(height)
+    
+          elif units == "cm" and unit2 == "m":
+            height = height / 100
+            print(height)
+            
+          elif units == "mm" and unit2 == "m":
+            height = height / 1000
+            print(height)
+    
+          elif units == "m" and unit2 == "mm":
+            height = height * 1000
+            print(height)
+            
+          elif units == "m" and unit2 == "cm":
+            height = height * 100
+            print(height)
+            
+          elif units == "cm" and unit2 == "mm":
+            height = height * 10
+            print(height)
+    
+          #convert side
+          if units == "mm" and unit2 == "cm":
+            side = side / 10
+            print(side)
+    
+          elif units == "cm" and unit2 == "m":
+            side = side / 100
+            print(side)
+            
+          elif units == "mm" and unit2 == "m":
+            side = side / 1000
+            print(side)
+    
+          elif units == "m" and unit2 == "mm":
+            side = side * 1000
+            print(side)
+            
+          elif units == "m" and unit2 == "cm":
+            side = side * 100
+            print(side)
+            
+          elif units == "cm" and unit2 == "mm":
+            side = side * 10
+            print(side)
       #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         elif triangle_type == triangles[3]:
           valid_triangle = True
@@ -282,6 +434,106 @@ def shape_picker(question):
                   print("Please enter mm, cm or M")
                 else:
                   valid_unit2 = True
+
+          #convert base
+          if units == "mm" and unit2 == "cm":
+            base = base / 10
+            print(base)
+    
+          elif units == "cm" and unit2 == "m":
+            base = base / 100
+            print(base)
+            
+          elif units == "mm" and unit2 == "m":
+            base = base / 1000
+            print(base)
+    
+          elif units == "m" and unit2 == "mm":
+            base = base * 1000
+            print(base)
+            
+          elif units == "m" and unit2 == "cm":
+            base = base * 100
+            print(base)
+            
+          elif units == "cm" and unit2 == "mm":
+            base = base * 10
+            print(base)
+    
+          #convert height
+          if units == "mm" and unit2 == "cm":
+            height = height / 10
+            print(height)
+    
+          elif units == "cm" and unit2 == "m":
+            height = height / 100
+            print(height)
+            
+          elif units == "mm" and unit2 == "m":
+            height = height / 1000
+            print(height)
+    
+          elif units == "m" and unit2 == "mm":
+            height = height * 1000
+            print(height)
+            
+          elif units == "m" and unit2 == "cm":
+            height = height * 100
+            print(height)
+            
+          elif units == "cm" and unit2 == "mm":
+            height = height * 10
+            print(height)
+    
+          #convert side
+          if units == "mm" and unit2 == "cm":
+            side = side / 10
+            print(side)
+    
+          elif units == "cm" and unit2 == "m":
+            side = side / 100
+            print(side)
+            
+          elif units == "mm" and unit2 == "m":
+            side = side / 1000
+            print(side)
+    
+          elif units == "m" and unit2 == "mm":
+            side = side * 1000
+            print(side)
+            
+          elif units == "m" and unit2 == "cm":
+            side = side * 100
+            print(side)
+            
+          elif units == "cm" and unit2 == "mm":
+            side = side * 10
+            print(side)
+
+          #convert side 2
+          if units == "mm" and unit2 == "cm":
+            side2 = side2 / 10
+            print(side2)
+    
+          elif units == "cm" and unit2 == "m":
+            side2 = side2 / 100
+            print(side2)
+            
+          elif units == "mm" and unit2 == "m":
+            side2 = side2 / 1000
+            print(side2)
+    
+          elif units == "m" and unit2 == "mm":
+            side2 = side2 * 1000
+            print(side2)
+            
+          elif units == "m" and unit2 == "cm":
+            side2 = side2 * 100
+            print(side2)
+            
+          elif units == "cm" and unit2 == "mm":
+            side2 = side2 * 10
+            print(side2)
       #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         elif triangle_type == triangles[4] or triangle_type == triangles[5]:
           valid_triangle = True
@@ -356,6 +608,107 @@ def shape_picker(question):
                   print("Please enter mm, cm or M")
                 else:
                   valid_unit2 = True
+
+          #convert base
+          if units == "mm" and unit2 == "cm":
+            base = base / 10
+            print(base)
+    
+          elif units == "cm" and unit2 == "m":
+            base = base / 100
+            print(base)
+            
+          elif units == "mm" and unit2 == "m":
+            base = base / 1000
+            print(base)
+    
+          elif units == "m" and unit2 == "mm":
+            base = base * 1000
+            print(base)
+            
+          elif units == "m" and unit2 == "cm":
+            base = base * 100
+            print(base)
+            
+          elif units == "cm" and unit2 == "mm":
+            base = base * 10
+            print(base)
+    
+          #convert height
+          if units == "mm" and unit2 == "cm":
+            height = height / 10
+            print(height)
+    
+          elif units == "cm" and unit2 == "m":
+            height = height / 100
+            print(height)
+            
+          elif units == "mm" and unit2 == "m":
+            height = height / 1000
+            print(height)
+    
+          elif units == "m" and unit2 == "mm":
+            height = height * 1000
+            print(height)
+            
+          elif units == "m" and unit2 == "cm":
+            height = height * 100
+            print(height)
+            
+          elif units == "cm" and unit2 == "mm":
+            height = height * 10
+            print(height)
+    
+          #convert side
+          if units == "mm" and unit2 == "cm":
+            side = side / 10
+            print(side)
+    
+          elif units == "cm" and unit2 == "m":
+            side = side / 100
+            print(side)
+            
+          elif units == "mm" and unit2 == "m":
+            side = side / 1000
+            print(side)
+    
+          elif units == "m" and unit2 == "mm":
+            side = side * 1000
+            print(side)
+            
+          elif units == "m" and unit2 == "cm":
+            side = side * 100
+            print(side)
+            
+          elif units == "cm" and unit2 == "mm":
+            side = side * 10
+            print(side)
+
+          #convert side 2
+          if units == "mm" and unit2 == "cm":
+            side2 = side2 / 10
+            print(side2)
+    
+          elif units == "cm" and unit2 == "m":
+            side2 = side2 / 100
+            print(side2)
+            
+          elif units == "mm" and unit2 == "m":
+            side2 = side2 / 1000
+            print(side2)
+    
+          elif units == "m" and unit2 == "mm":
+            side2 = side2 * 1000
+            print(side2)
+            
+          elif units == "m" and unit2 == "cm":
+            side2 = side2 * 100
+            print(side2)
+            
+          elif units == "cm" and unit2 == "mm":
+            side2 = side2 * 10
+            print(side2)
+            
       #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         else:
           valid_triangle = False
