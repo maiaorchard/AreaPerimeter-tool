@@ -2,7 +2,7 @@
 instructions = '''1. You will be asked to enter a shape 
 2. You will be asked to enter the measurements of your shape, please only enter a number
 3. You will be asked for the units of your shape (mm, cm, M)
-4. You will be asked if you would like to convert the units to another
+4. You will be asked which units you would like to convert to, if you would not like to convert enter the same unit as the first (mm, cm, MM)
 5. Enter if you're trying to find area or perimeter
 6. You'll get the answer!'''
 
