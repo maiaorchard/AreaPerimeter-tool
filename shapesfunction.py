@@ -1164,8 +1164,10 @@ def shape_picker(question):
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     else:
       print("That shape is not in the list. Please enter a different shape or  check your spelling of the shape")
-
-  print(answer)
+  if area_or_perimeter == "area":
+    print("The area of your", (shape_selected), "is", (answer), (unit2) +"²")
+  elif area_or_perimeter == "perimeter":
+    print("The perimeter of your", (shape_selected), "is", (answer), (unit2))
 
 
 #Lists go under functions
