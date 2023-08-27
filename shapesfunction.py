@@ -62,6 +62,19 @@ def shape_picker(question):
       elif units == "cm" and unit2 == "mm":
         length = length * 10
         print(length)
+        
+      #ask if user is trying to find area or perimeter
+      valid_areaperimeter = False
+      while valid_areaperimeter == False:
+        area_or_perimeter = input("Would you like to calculate area or perimeter? ").lower().strip()
+        if area_or_perimeter == "area":
+          valid_areaperimeter = True
+          
+        elif area_or_perimeter == "perimeter":
+          valid_areaperimeter = True
+          
+        else:
+          print("Please enter area or perimeter")
       
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     elif shape_selected == shapes[1]:
@@ -166,6 +179,19 @@ def shape_picker(question):
           elif units == "cm" and unit2 == "mm":
             width = width * 10
             print(width)
+
+          #ask if user is trying to find area or perimeter
+          valid_areaperimeter = False
+          while valid_areaperimeter == False:
+            area_or_perimeter = input("Would you like to calculate area or perimeter? ").lower().strip()
+            if area_or_perimeter == "area":
+              valid_areaperimeter = True
+              
+            elif area_or_perimeter == "perimeter":
+              valid_areaperimeter = True
+              
+            else:
+              print("Please enter area or perimeter")
         
       #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         elif triangle_type == triangles[1]:
@@ -224,6 +250,19 @@ def shape_picker(question):
           elif units == "cm" and unit2 == "mm":
             length = length * 10
             print(length)
+
+          #ask if user is trying to find area or perimeter
+          valid_areaperimeter = False
+          while valid_areaperimeter == False:
+            area_or_perimeter = input("Would you like to calculate area or perimeter? ").lower().strip()
+            if area_or_perimeter == "area":
+              valid_areaperimeter = True
+              
+            elif area_or_perimeter == "perimeter":
+              valid_areaperimeter = True
+              
+            else:
+              print("Please enter area or perimeter")
           
       #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         elif triangle_type == triangles[2]:
@@ -360,6 +399,20 @@ def shape_picker(question):
           elif units == "cm" and unit2 == "mm":
             side = side * 10
             print(side)
+
+          #ask if user is trying to find area or perimeter
+          valid_areaperimeter = False
+          while valid_areaperimeter == False:
+            area_or_perimeter = input("Would you like to calculate area or perimeter? ").lower().strip()
+            if area_or_perimeter == "area":
+              valid_areaperimeter = True
+              
+            elif area_or_perimeter == "perimeter":
+              valid_areaperimeter = True
+              
+            else:
+              print("Please enter area or perimeter")
+              
       #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         elif triangle_type == triangles[3]:
           valid_triangle = True
@@ -534,6 +587,20 @@ def shape_picker(question):
           elif units == "cm" and unit2 == "mm":
             side2 = side2 * 10
             print(side2)
+
+          #ask if user is trying to find area or perimeter
+          valid_areaperimeter = False
+          while valid_areaperimeter == False:
+            area_or_perimeter = input("Would you like to calculate area or perimeter? ").lower().strip()
+            if area_or_perimeter == "area":
+              valid_areaperimeter = True
+              
+            elif area_or_perimeter == "perimeter":
+              valid_areaperimeter = True
+              
+            else:
+              print("Please enter area or perimeter")
+              
       #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         elif triangle_type == triangles[4] or triangle_type == triangles[5]:
           valid_triangle = True
@@ -708,6 +775,19 @@ def shape_picker(question):
           elif units == "cm" and unit2 == "mm":
             side2 = side2 * 10
             print(side2)
+
+          #ask if user is trying to find area or perimeter
+          valid_areaperimeter = False
+          while valid_areaperimeter == False:
+            area_or_perimeter = input("Would you like to calculate area or perimeter? ").lower().strip()
+            if area_or_perimeter == "area":
+              valid_areaperimeter = True
+              
+            elif area_or_perimeter == "perimeter":
+              valid_areaperimeter = True
+              
+            else:
+              print("Please enter area or perimeter")
             
       #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         else:
@@ -810,6 +890,19 @@ def shape_picker(question):
       elif units == "cm" and unit2 == "mm":
         width = width * 10
         print(width)
+
+      #ask if user is trying to find area or perimeter
+      valid_areaperimeter = False
+      while valid_areaperimeter == False:
+        area_or_perimeter = input("Would you like to calculate area or perimeter? ").lower().strip()
+        if area_or_perimeter == "area":
+          valid_areaperimeter = True
+          
+        elif area_or_perimeter == "perimeter":
+          valid_areaperimeter = True
+          
+        else:
+          print("Please enter area or perimeter")
         
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     elif shape_selected == shapes[3]:
@@ -867,6 +960,19 @@ def shape_picker(question):
       elif units == "cm" and unit2 == "mm":
         radius = radius * 10
         print(radius)
+
+      #ask if user is trying to find area or perimeter
+      valid_areaperimeter = False
+      while valid_areaperimeter == False:
+        area_or_perimeter = input("Would you like to calculate area or perimeter? ").lower().strip()
+        if area_or_perimeter == "area":
+          valid_areaperimeter = True
+          
+        elif area_or_perimeter == "perimeter":
+          valid_areaperimeter = True
+          
+        else:
+          print("Please enter area or perimeter")
         
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     elif shape_selected == shapes[4]:
@@ -1003,6 +1109,19 @@ def shape_picker(question):
       elif units == "cm" and unit2 == "mm":
         side = side * 10
         print(side)
+
+      #ask if user is trying to find area or perimeter
+      valid_areaperimeter = False
+      while valid_areaperimeter == False:
+        area_or_perimeter = input("Would you like to calculate area or perimeter? ").lower().strip()
+        if area_or_perimeter == "area":
+          valid_areaperimeter = True
+          
+        elif area_or_perimeter == "perimeter":
+          valid_areaperimeter = True
+          
+        else:
+          print("Please enter area or perimeter")
         
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     else:
