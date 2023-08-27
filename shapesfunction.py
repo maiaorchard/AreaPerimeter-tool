@@ -192,9 +192,13 @@ def shape_picker(question):
             area_or_perimeter = input("Would you like to calculate area or perimeter? ").lower().strip()
             if area_or_perimeter == "area":
               valid_areaperimeter = True
+              #calculate area
+              answer = length * width / 2
               
             elif area_or_perimeter == "perimeter":
               valid_areaperimeter = True
+              #calculate perimeter
+              answer = length + width + math.sqrt(length**2 + width**2)
               
             else:
               print("Please enter area or perimeter")
@@ -263,9 +267,13 @@ def shape_picker(question):
             area_or_perimeter = input("Would you like to calculate area or perimeter? ").lower().strip()
             if area_or_perimeter == "area":
               valid_areaperimeter = True
+              #calculate area 
+              answer = math.sqrt(3) / 4 * length ** 2
               
             elif area_or_perimeter == "perimeter":
               valid_areaperimeter = True
+              #calculate perimeter
+              answer = length * 3
               
             else:
               print("Please enter area or perimeter")
@@ -412,9 +420,13 @@ def shape_picker(question):
             area_or_perimeter = input("Would you like to calculate area or perimeter? ").lower().strip()
             if area_or_perimeter == "area":
               valid_areaperimeter = True
+              #calculate area
+              answer = base * height / 2
               
             elif area_or_perimeter == "perimeter":
               valid_areaperimeter = True
+              #calculate perimeter
+              answer = 2 * side + base
               
             else:
               print("Please enter area or perimeter")
@@ -600,9 +612,13 @@ def shape_picker(question):
             area_or_perimeter = input("Would you like to calculate area or perimeter? ").lower().strip()
             if area_or_perimeter == "area":
               valid_areaperimeter = True
+              #calculate area
+              answer = 0.5 * base * height
               
             elif area_or_perimeter == "perimeter":
               valid_areaperimeter = True
+              #calculate perimeter
+              answer = base + side + side2
               
             else:
               print("Please enter area or perimeter")
@@ -788,9 +804,13 @@ def shape_picker(question):
             area_or_perimeter = input("Would you like to calculate area or perimeter? ").lower().strip()
             if area_or_perimeter == "area":
               valid_areaperimeter = True
+              #calculate area
+              answer = height * base / 2
               
             elif area_or_perimeter == "perimeter":
               valid_areaperimeter = True
+              #calculate perimeter
+              answer = base + side + side2
               
             else:
               print("Please enter area or perimeter")
