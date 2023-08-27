@@ -1,5 +1,7 @@
 
-#Functions go at the top
+import math
+
+#Functions go here
 def shape_picker(question):
   valid_shape = False
   while valid_shape == False:
@@ -69,10 +71,10 @@ def shape_picker(question):
         area_or_perimeter = input("Would you like to calculate area or perimeter? ").lower().strip()
         if area_or_perimeter == "area":
           valid_areaperimeter = True
-          
+          answer = length ** 2
         elif area_or_perimeter == "perimeter":
           valid_areaperimeter = True
-          
+          answer = length * 4
         else:
           print("Please enter area or perimeter")
       
@@ -1126,6 +1128,8 @@ def shape_picker(question):
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     else:
       print("That shape is not in the list. Please enter a different shape or  check your spelling of the shape")
+
+  print(answer)
 
 
 #Lists go under functions
