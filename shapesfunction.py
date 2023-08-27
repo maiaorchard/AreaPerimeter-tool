@@ -1174,6 +1174,7 @@ def shape_picker(question):
 shapes = ["square", "triangle", "rectangle", "circle", "parallelogram"]
 triangles = ["right angle", "equilateral", "isosceles", "acute", "scalene", "obtuse"]
 
+
 #Use the function
 shape_picker("Choose a shape: ")
 
