@@ -1,7 +1,7 @@
 
 import math
 
-#change pi to a symbol to make equations easier to write
+#change pi to a symbol and calculate square root of 3 to make equations easier to write
 π = math.pi
 root_3 = math.sqrt(3)
 
@@ -54,283 +54,6 @@ def units2(question):
       print("Please enter mm, cm or M")
     else:
       valid_unit = True
-  
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-def length():
-  #Ask for length
-  global length
-  valid_number = False
-  while valid_number == False:
-    try:
-      length = float(input("What is the length of your {}? ".format(shape_selected)))
-      if length < 0.1 or length > 999.9:
-        print("Please enter a number between 0.1 and 999.9")
-      else:
-        valid_number = True
-        
-    except:
-      print("Please enter a number between 0.1 and 999.9")
-
-def width():
-  global width
-  valid_number = False
-  while valid_number == False:
-    try:
-      width = float(input("What is the width of your {}? ".format(shape_selected)))
-      if width < 0.1 or width > 999.9:
-        print("Please enter a number between 0.1 and 999.9")
-      else:
-        valid_number = True
-    except:
-      print("Please enter a number between 0.1 and 999.9")
-  
-def base():
-  global base 
-  valid_number = False
-  while valid_number == False:
-    try:
-      base = float(input("What is the base of your {}? ".format(shape_selected)))
-      if base < 0.1 or base > 999.9:
-        print("Please enter a number between 0.1 and 999.9")
-      else:
-        valid_number = True
-    except:
-      print("Please enter a number between 0.1 and 999.9")
-
-def height():
-  global height
-  valid_number = False
-  while valid_number == False:
-    try:
-      height = float(input("What is the height of your {}? ".format(shape_selected)))
-      if height < 0.1 or height > 999.9:
-        print("Please enter a number between 0.1 and 999.9")
-      else:
-        valid_number = True
-    except:
-      print("Please enter a number between 0.1 and 999.9")
-
-def side():
-  global side
-  valid_number = False
-  while valid_number == False:
-    try:
-      side = float(input("What is the side of your {}? ".format(shape_selected)))
-      if side < 0.1 or side > 999.9:
-        print("Please enter a number between 0.1 and 999.9")
-      else:
-        valid_number = True
-    except:
-      print("Please enter a number between 0.1 and 999.9")
-
-def side2():
-  global side2
-  valid_number = False
-  while valid_number == False:
-    try:
-      side2 = float(input("What is the other side of your {}? ".format(shape_selected)))
-      if side2 < 0.1 or side2 > 999.9:
-        print("Please enter a number between 0.1 and 999.9")
-      else:
-        valid_number = True
-    except:
-      print("Please enter a number between 0.1 and 999.9")
-
-def radius():
-  global radius
-  valid_number = False
-  while valid_number == False:
-    try:
-      radius = float(input("What is the radius of your {}? ".format(shape_selected)))
-      if radius < 0.1 or radius > 999.9:
-        print("Please enter a number between 0.1 and 999.9")
-      else:
-        valid_number = True
-    except:
-      print("Please enter a number between 0.1 and 999.9")
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-def unit_conversion():
-  #convert length
-  if units == "mm" and units2 == "cm":
-    length = float(length) / 10
-    print(length)
-
-  elif units == "cm" and units2 == "m":
-    length = float(length) / 100
-    print(length)
-    
-  elif units == "mm" and units2 == "m":
-    length = float(length) / 1000
-    print(length)
-
-  elif units == "m" and units2 == "mm":
-    length = float(length) * 1000
-    print(length)
-    
-  elif units == "m" and units2 == "cm":
-    length = float(length) * 100
-    print(length)
-    
-  elif units == "cm" and units2 == "mm":
-    length = float(length) * 10
-    print(length)
-    
-  width = width()
-  #convert width
-  if units == "mm" and units2 == "cm":
-    width = width / 10
-    print(width)
-
-  elif units == "cm" and units2 == "m":
-    width = width / 100
-    print(width)
-    
-  elif units == "mm" and units2 == "m":
-    width = width / 1000
-    print(width)
-
-  elif units == "m" and units2 == "mm":
-    width = width * 1000
-    print(width)
-    
-  elif units == "m" and units2 == "cm":
-    width = width * 100
-    print(width)
-    
-  elif units == "cm" and units2 == "mm":
-    width = width * 10
-    print(width)
-
-  base = ""
-  #convert base
-  if units == "mm" and units2 == "cm":
-    base = base / 10
-    print(base)
-
-  elif units == "cm" and units2 == "m":
-    base = base / 100
-    print(base)
-    
-  elif units == "mm" and units2 == "m":
-    base = base / 1000
-    print(base)
-
-  elif units == "m" and units2 == "mm":
-    base = base * 1000
-    print(base)
-    
-  elif units == "m" and units2 == "cm":
-    base = base * 100
-    print(base)
-    
-  elif units == "cm" and units2 == "mm":
-    base = base * 10
-    print(base)
-
-  height = ""
-  #convert height
-  if units == "mm" and units2 == "cm":
-    height = height / 10
-    print(height)
-
-  elif units == "cm" and units2 == "m":
-    height = height / 100
-    print(height)
-    
-  elif units == "mm" and units2 == "m":
-    height = height / 1000
-    print(height)
-
-  elif units == "m" and units2 == "mm":
-    height = height * 1000
-    print(height)
-    
-  elif units == "m" and units2 == "cm":
-    height = height * 100
-    print(height)
-    
-  elif units == "cm" and units2 == "mm":
-    height = height * 10
-    print(height)
-
-  side = ""
-  #convert side 1
-  if units == "mm" and units2 == "cm":
-    side = side / 10
-    print(side)
-
-  elif units == "cm" and units2 == "m":
-    side = side / 100
-    print(side)
-    
-  elif units == "mm" and units2 == "m":
-    side = side / 1000
-    print(side)
-
-  elif units == "m" and units2 == "mm":
-    side = side * 1000
-    print(side)
-    
-  elif units == "m" and units2 == "cm":
-    side = side * 100
-    print(side)
-    
-  elif units == "cm" and units2 == "mm":
-    side = side * 10
-    print(side)
-
-  side2 = ""
-  #convert side 2
-  if units == "mm" and units2 == "cm":
-    side2 = side2 / 10
-    print(side2)
-
-  elif units == "cm" and units2 == "m":
-    side2 = side2 / 100
-    print(side2)
-    
-  elif units == "mm" and units2 == "m":
-    side2 = side2 / 1000
-    print(side2)
-
-  elif units == "m" and units2 == "mm":
-    side2 = side2 * 1000
-    print(side2)
-    
-  elif units == "m" and units2 == "cm":
-    side2 = side2 * 100
-    print(side2)
-    
-  elif units == "cm" and units2 == "mm":
-    side2 = side2 * 10
-    print(side2)
-
-  radius = ""
-  #convert radius
-  if units == "mm" and units2 == "cm":
-    radius = radius / 10
-    print(radius)
-
-  elif units == "cm" and units2 == "m":
-    radius = radius / 100
-    print(radius)
-    
-  elif units == "mm" and units2 == "m":
-    radius = radius / 1000
-    print(radius)
-
-  elif units == "m" and units2 == "mm":
-    radius = radius * 1000
-    print(radius)
-    
-  elif units == "m" and units2 == "cm":
-    radius = radius * 100
-    print(radius)
-    
-  elif units == "cm" and units2 == "mm":
-    radius = radius * 10
-    print(radius)
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -532,17 +255,444 @@ def triangle():
     #Isosceles triangle
     elif triangle_type == triangles[2]:
       valid_triangle = True
-      print(triangle_type)
+      valid_number = False
+      while valid_number == False:
+        try:
+          base = float(input("What is the base of your {}? ".format(shape_selected)))
+          if base < 0.1 or base > 999.9:
+            print("Please enter a number between 0.1 and 999.9")
+          else:
+            valid_number = True
+        except:
+          print("Please enter a number between 0.1 and 999.9")
+    
+      global height
+      valid_number2 = False
+      while valid_number2 == False:
+        try:
+          height = float(input("What is the height of your {}? ".format(shape_selected)))
+          if height < 0.1 or height > 999.9:
+            print("Please enter a number between 0.1 and 999.9")
+          else:
+            valid_number2 = True
+        except:
+          print("Please enter a number between 0.1 and 999.9")
+    
+      global side
+      valid_number3 = False
+      while valid_number3 == False:
+        try:
+          side = float(input("What is the side of your {}? ".format(shape_selected)))
+          if side < 0.1 or side > 999.9:
+            print("Please enter a number between 0.1 and 999.9")
+          else:
+            valid_number3 = True
+        except:
+          print("Please enter a number between 0.1 and 999.9")
+          
+      units("mm, cm, or m? ")
+      units2("What units would you like to convert to? mm, cm, or M? If you would not like units converted, please enter the same unit ")
+      
+      #convert base
+      if units == "mm" and units2 == "cm":
+        base = base / 10
+        print(base)
+    
+      elif units == "cm" and units2 == "m":
+        base = base / 100
+        print(base)
+        
+      elif units == "mm" and units2 == "m":
+        base = base / 1000
+        print(base)
+    
+      elif units == "m" and units2 == "mm":
+        base = base * 1000
+        print(base)
+        
+      elif units == "m" and units2 == "cm":
+        base = base * 100
+        print(base)
+        
+      elif units == "cm" and units2 == "mm":
+        base = base * 10
+        print(base)
+    
+      #convert height
+      if units == "mm" and units2 == "cm":
+        height = height / 10
+        print(height)
+    
+      elif units == "cm" and units2 == "m":
+        height = height / 100
+        print(height)
+        
+      elif units == "mm" and units2 == "m":
+        height = height / 1000
+        print(height)
+    
+      elif units == "m" and units2 == "mm":
+        height = height * 1000
+        print(height)
+        
+      elif units == "m" and units2 == "cm":
+        height = height * 100
+        print(height)
+        
+      elif units == "cm" and units2 == "mm":
+        height = height * 10
+        print(height)
+    
+      #convert side
+      if units == "mm" and units2 == "cm":
+        side = side / 10
+        print(side)
+    
+      elif units == "cm" and units2 == "m":
+        side = side / 100
+        print(side)
+        
+      elif units == "mm" and units2 == "m":
+        side = side / 1000
+        print(side)
+    
+      elif units == "m" and units2 == "mm":
+        side = side * 1000
+        print(side)
+        
+      elif units == "m" and units2 == "cm":
+        side = side * 100
+        print(side)
+        
+      elif units == "cm" and units2 == "mm":
+        side = side * 10
+        print(side)
+    
+      area_perimeter("Would you like to find area or perimeter? ")
+      if area_or_perimeter == "area":
+        answer = base * height / 2
+        print("The area of your", (shape_selected), "is", (answer), (units2) +"²")
+      elif area_or_perimeter == "perimeter":
+        answer = 2 * side + base
+        print("The perimeter of your", (shape_selected), "is", (answer), (units2))
 
     #Acute triangle
     elif triangle_type == triangles[3]:
       valid_triangle = True
-      print(triangle_type)
+      valid_number = False
+      while valid_number == False:
+        try:
+          base = float(input("What is the base of your {}? ".format(shape_selected)))
+          if base < 0.1 or base > 999.9:
+            print("Please enter a number between 0.1 and 999.9")
+          else:
+            valid_number = True
+        except:
+          print("Please enter a number between 0.1 and 999.9")
+    
+      valid_number2 = False
+      while valid_number2 == False:
+        try:
+          height = float(input("What is the height of your {}? ".format(shape_selected)))
+          if height < 0.1 or height > 999.9:
+            print("Please enter a number between 0.1 and 999.9")
+          else:
+            valid_number2 = True
+        except:
+          print("Please enter a number between 0.1 and 999.9")
+    
+      valid_number3 = False
+      while valid_number3 == False:
+        try:
+          side = float(input("What is the side of your {}? ".format(shape_selected)))
+          if side < 0.1 or side > 999.9:
+            print("Please enter a number between 0.1 and 999.9")
+          else:
+            valid_number3 = True
+        except:
+          print("Please enter a number between 0.1 and 999.9")
+
+      valid_number4 = False
+      while valid_number4 == False:
+        try:
+          side2 = float(input("What is the other side of your {}? ".format(shape_selected)))
+          if side2 < 0.1 or side2 > 999.9:
+            print("Please enter a number between 0.1 and 999.9")
+          else:
+            valid_number4 = True
+        except:
+          print("Please enter a number between 0.1 and 999.9")
+
+          
+      units("mm, cm, or m? ")
+      units2("What units would you like to convert to? mm, cm, or M? If you would not like units converted, please enter the same unit ")
+      
+      #convert base
+      if units == "mm" and units2 == "cm":
+        base = base / 10
+        print(base)
+    
+      elif units == "cm" and units2 == "m":
+        base = base / 100
+        print(base)
+        
+      elif units == "mm" and units2 == "m":
+        base = base / 1000
+        print(base)
+    
+      elif units == "m" and units2 == "mm":
+        base = base * 1000
+        print(base)
+        
+      elif units == "m" and units2 == "cm":
+        base = base * 100
+        print(base)
+        
+      elif units == "cm" and units2 == "mm":
+        base = base * 10
+        print(base)
+    
+      #convert height
+      if units == "mm" and units2 == "cm":
+        height = height / 10
+        print(height)
+    
+      elif units == "cm" and units2 == "m":
+        height = height / 100
+        print(height)
+        
+      elif units == "mm" and units2 == "m":
+        height = height / 1000
+        print(height)
+    
+      elif units == "m" and units2 == "mm":
+        height = height * 1000
+        print(height)
+        
+      elif units == "m" and units2 == "cm":
+        height = height * 100
+        print(height)
+        
+      elif units == "cm" and units2 == "mm":
+        height = height * 10
+        print(height)
+    
+      #convert side
+      if units == "mm" and units2 == "cm":
+        side = side / 10
+        print(side)
+    
+      elif units == "cm" and units2 == "m":
+        side = side / 100
+        print(side)
+        
+      elif units == "mm" and units2 == "m":
+        side = side / 1000
+        print(side)
+    
+      elif units == "m" and units2 == "mm":
+        side = side * 1000
+        print(side)
+        
+      elif units == "m" and units2 == "cm":
+        side = side * 100
+        print(side)
+        
+      elif units == "cm" and units2 == "mm":
+        side = side * 10
+        print(side)
+
+      #convert side 2
+      if units == "mm" and units2 == "cm":
+        side2 = side2 / 10
+        print(side2)
+    
+      elif units == "cm" and units2 == "m":
+        side2 = side2 / 100
+        print(side2)
+        
+      elif units == "mm" and units2 == "m":
+        side2 = side2 / 1000
+        print(side2)
+    
+      elif units == "m" and units2 == "mm":
+        side2 = side2 * 1000
+        print(side2)
+        
+      elif units == "m" and units2 == "cm":
+        side2 = side2 * 100
+        print(side2)
+        
+      elif units == "cm" and units2 == "mm":
+        side2 = side2 * 10
+        print(side2)
+    
+      area_perimeter("Would you like to find area or perimeter? ")
+      if area_or_perimeter == "area":
+        answer = 0.5 * base * height
+        print("The area of your", (shape_selected), "is", (answer), (units2) +"²")
+      elif area_or_perimeter == "perimeter":
+        answer = side + base + side2
+        print("The perimeter of your", (shape_selected), "is", (answer), (units2))
 
     #Scalene and Obtuse triangles
     elif triangle_type == triangles[4] or triangle_type == triangles[5]:
       valid_triangle = True
-      print(triangle_type)
+      valid_number = False
+      while valid_number == False:
+        try:
+          base = float(input("What is the base of your {}? ".format(shape_selected)))
+          if base < 0.1 or base > 999.9:
+            print("Please enter a number between 0.1 and 999.9")
+          else:
+            valid_number = True
+        except:
+          print("Please enter a number between 0.1 and 999.9")
+    
+      valid_number2 = False
+      while valid_number2 == False:
+        try:
+          height = float(input("What is the height of your {}? ".format(shape_selected)))
+          if height < 0.1 or height > 999.9:
+            print("Please enter a number between 0.1 and 999.9")
+          else:
+            valid_number2 = True
+        except:
+          print("Please enter a number between 0.1 and 999.9")
+    
+      valid_number3 = False
+      while valid_number3 == False:
+        try:
+          side = float(input("What is the side of your {}? ".format(shape_selected)))
+          if side < 0.1 or side > 999.9:
+            print("Please enter a number between 0.1 and 999.9")
+          else:
+            valid_number3 = True
+        except:
+          print("Please enter a number between 0.1 and 999.9")
+
+      valid_number4 = False
+      while valid_number4 == False:
+        try:
+          side2 = float(input("What is the other side of your {}? ".format(shape_selected)))
+          if side2 < 0.1 or side2 > 999.9:
+            print("Please enter a number between 0.1 and 999.9")
+          else:
+            valid_number4 = True
+        except:
+          print("Please enter a number between 0.1 and 999.9")
+
+          
+      units("mm, cm, or m? ")
+      units2("What units would you like to convert to? mm, cm, or M? If you would not like units converted, please enter the same unit ")
+      
+      #convert base
+      if units == "mm" and units2 == "cm":
+        base = base / 10
+        print(base)
+    
+      elif units == "cm" and units2 == "m":
+        base = base / 100
+        print(base)
+        
+      elif units == "mm" and units2 == "m":
+        base = base / 1000
+        print(base)
+    
+      elif units == "m" and units2 == "mm":
+        base = base * 1000
+        print(base)
+        
+      elif units == "m" and units2 == "cm":
+        base = base * 100
+        print(base)
+        
+      elif units == "cm" and units2 == "mm":
+        base = base * 10
+        print(base)
+    
+      #convert height
+      if units == "mm" and units2 == "cm":
+        height = height / 10
+        print(height)
+    
+      elif units == "cm" and units2 == "m":
+        height = height / 100
+        print(height)
+        
+      elif units == "mm" and units2 == "m":
+        height = height / 1000
+        print(height)
+    
+      elif units == "m" and units2 == "mm":
+        height = height * 1000
+        print(height)
+        
+      elif units == "m" and units2 == "cm":
+        height = height * 100
+        print(height)
+        
+      elif units == "cm" and units2 == "mm":
+        height = height * 10
+        print(height)
+    
+      #convert side
+      if units == "mm" and units2 == "cm":
+        side = side / 10
+        print(side)
+    
+      elif units == "cm" and units2 == "m":
+        side = side / 100
+        print(side)
+        
+      elif units == "mm" and units2 == "m":
+        side = side / 1000
+        print(side)
+    
+      elif units == "m" and units2 == "mm":
+        side = side * 1000
+        print(side)
+        
+      elif units == "m" and units2 == "cm":
+        side = side * 100
+        print(side)
+        
+      elif units == "cm" and units2 == "mm":
+        side = side * 10
+        print(side)
+
+      #convert side 2
+      if units == "mm" and units2 == "cm":
+        side2 = side2 / 10
+        print(side2)
+    
+      elif units == "cm" and units2 == "m":
+        side2 = side2 / 100
+        print(side2)
+        
+      elif units == "mm" and units2 == "m":
+        side2 = side2 / 1000
+        print(side2)
+    
+      elif units == "m" and units2 == "mm":
+        side2 = side2 * 1000
+        print(side2)
+        
+      elif units == "m" and units2 == "cm":
+        side2 = side2 * 100
+        print(side2)
+        
+      elif units == "cm" and units2 == "mm":
+        side2 = side2 * 10
+        print(side2)
+    
+      area_perimeter("Would you like to find area or perimeter? ")
+      if area_or_perimeter == "area":
+        answer = base * height / 2
+        print("The area of your", (shape_selected), "is", (answer), (units2) +"²")
+      elif area_or_perimeter == "perimeter":
+        answer = side + base + side2
+        print("The perimeter of your", (shape_selected), "is", (answer), (units2))
   
     else:
       print("Please enter a type of triangle.")
